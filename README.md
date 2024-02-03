@@ -39,5 +39,6 @@ To run the weather forecast dashboard locally, follow these steps:
 > OpenWeather Api
 
 # Screenshots
-<img width="950" alt="screen" src="https://github.com/Khalid3110/Weather_Forecast_Dashboard/assets/121111705/ab466534-600e-4867-afb9-0db29528ed94">
+<img width="940" alt="screen" src="https://github.com/Khalid3110/Weather_Forecast_Dashboard/assets/121111705/9f33ed8d-cf34-44de-a3a2-51a7545fe4ad">
+
 
