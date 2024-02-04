@@ -2,11 +2,9 @@ const API_ID  = "99e7ff8fb1279abf56cc487aa14808d1"
 
 const currentWeather = document.querySelector(".weather-data .current-weather");
 const sysDate = document.querySelector(".date");
-let btn = document.querySelector(".search-btn");
+const btn = document.querySelector(".search-btn");
 const cityInput = document.querySelector(".city-input");
 const weatherList = document.querySelector(".weather-cards");
-
-const calc = true;
 
 const days = [
     "Sunday",
@@ -45,7 +43,7 @@ const findLocation = async (name) =>{
         console.log(result);
 
         if(result.cod !== "404"){
-            const updatedHtml = displayImageContent(result,calc);
+            const updatedHtml = displayImageContent(result);
             displayForeCast(result.coord.lat, result.coord.lon);
 
             currentWeather.innerHTML = updatedHtml;
@@ -62,13 +60,13 @@ const findLocation = async (name) =>{
 }
 
 // display image content and temp
-const displayImageContent = (data,calc) =>{
+const displayImageContent = (data) =>{
            return  `<div class="details">
                     <h3 class="title">City : ${data.name}</h3>
                     <h6>Temp : ${Math.round(data.main.temp-275.15)} °C</h6>
                     <h6>Max : ${Math.round(data.main.temp_max-275.15)} °C</h6>
                     <h6>Min : ${Math.round(data.main.temp_min-275.15)} °C</h6>
-                    <h6>humidity : ${data.main.humidity}%</h6>
+                    <h6>Humidity : ${data.main.humidity}%</h6>
                     <h6>Wind Speed : ${data.wind.speed} m/s</h6>
                 </div>
                 <div class="icon">

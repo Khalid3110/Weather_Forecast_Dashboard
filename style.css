@@ -119,7 +119,7 @@ h1{
     color: #fff;
     padding: 18px 16px;
     list-style: none;
-    width: calc(100%/5);
+    width: calc(100% / 5);
     background: #457b9d;
     border-radius: 1rem;
 }
@@ -148,7 +148,7 @@ h1{
     }
 
     .weather-cards .card{
-        width: calc(100%/4-15px);
+        width: calc(100% / 4 - 15px);
     }
 }
 
@@ -163,7 +163,7 @@ h1{
         width: 450px;
     }
     .weather-cards .card{
-        width:  calc(100%/2-10px);
+        width:  calc(100% / 2 - 10px);
     }
 }
 
